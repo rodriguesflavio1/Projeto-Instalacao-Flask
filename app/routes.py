@@ -2,6 +2,7 @@ from app import app
 from flask import render_template
 
 
+@app.route('/')
 @app.route('/index') # definindo uma rota para url do portal
 #@app.route('/index', defaults={"nome":"usuario"})
 #@app.route('/index/<nome>') # criando uma rota alternativa index para url do portal
