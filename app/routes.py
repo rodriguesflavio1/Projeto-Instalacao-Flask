@@ -3,9 +3,8 @@ from flask import render_template
 
 
 @app.route('/') # definindo uma rota para url do portal
-@app.route('/index') # criando uma rota alternativa index para url do portal
-def index():
-    name = 'Carlos'
+@app.route('/index/<name>') # criando uma rota alternativa index para url do portal
+def index(name):
     dados = {"profissao": "Analista Desenvolvedor","Nivel": "Senior"} 
     return render_template('index.html',nome= name, dados= dados) # usando a função render_template para abrir arquivo html externo
 
