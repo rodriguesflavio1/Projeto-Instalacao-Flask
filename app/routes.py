@@ -13,3 +13,7 @@ def index():
 @app.route('/contato') # definindo uma rota para url do portal
 def contato():
     return render_template('contato.html') # usando a função render_template para abrir arquivo html externo
+
+@app.route('/login')
+def login():
+    return render_template('login.html')
